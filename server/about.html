@@ -6,12 +6,67 @@
     <title>Welcome to custom server</title>
     <style>
       body {
-        background-color: #1a1a1a;
-        color: #fff;
+        background: linear-gradient(135deg, #232526 0%, #414345 100%);
+        color: #f5f5f5;
+        font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+        margin: 0;
+        min-height: 100vh;
+      }
+      .navbar {
+        background: #222;
+        padding: 1rem 0;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      }
+      .navbar a {
+        color: #f5f5f5;
+        text-decoration: none;
+        font-weight: 500;
+        letter-spacing: 1px;
+        transition: color 0.2s;
+      }
+      .navbar a:hover {
+        color: #00bcd4;
+      }
+      .container {
+        max-width: 500px;
+        margin: 3rem auto;
+        background: rgba(34,34,34,0.95);
+        border-radius: 16px;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+        padding: 2rem;
+        text-align: center;
+      }
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: #00bcd4;
+      }
+      @media (max-width: 600px) {
+        .container {
+          margin: 1rem;
+          padding: 1rem;
+        }
+        h1 {
+          font-size: 2rem;
+        }
+        .navbar {
+          gap: 1rem;
+        }
       }
     </style>
   </head>
   <body>
-    <h1 style="text-align: center">Welcome to chaicode - about page</h1>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+      <h1>About Chaicode</h1>
+      <p>This page provides information about the Chaicode project. It is a simple Node.js server demo with improved UI.</p>
+    </div>
   </body>
 </html>
